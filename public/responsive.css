@@ -1,0 +1,51 @@
+
+
+@media only screen and (max-width: 600px) {
+
+   
+    .container{
+
+      --cardwidth: 350px;
+      --cardheight: 430px;
+        width: var(--cardwidth);
+
+        display: grid;
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+    }
+
+    .sedans{
+        grid-area: a;
+  
+        width: var(--cardwidth);
+        border-bottom-left-radius:unset;
+        border-top-right-radius: var(--corners);
+    }
+
+    
+
+    .suvs{
+
+       grid-area: b;
+
+  
+    }
+
+    .luxury{
+
+        grid-area: c;
+        border-top-right-radius:unset;
+        border-bottom-left-radius: var(--corners);
+        width: var(--cardwidth);
+  
+    }
+
+    button{
+        --buttonmargin:2px;
+    }
+
+}

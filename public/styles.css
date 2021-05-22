@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+    
+}
+
+:root{
+--lgreycolor: hsl(0, 0%, 95%);
+--twhitecolor: hsla(0, 0%, 100%, 0.75);
+--borangecolor: hsl(31, 77%, 52%);
+--dcyancolor:hsl(184, 100%, 22%);
+--vdcyancolor:hsl(179, 100%, 13%);
+--bodycopy: 15px;
+--smallfont: "Lexend Deca", sans-serif;
+--largefont: "Big Shoulders Display", sans-serif;
+--containermargin: 4rem;
+--cardpadding: 50px;
+--copypadding:30px;
+--buttonpadding:20px;
+--containerwidth: 800px;
+--cardwidth: 280px;
+--buttonmargin:45px;
+--cardheight: 500px;
+--buttonwidth: 150px;
+--corners: 10px;
+
+}
+
+body{
+
+        background-color: var(--lgreycolor);
+ 
+
+    }
+
+.container{
+    margin-top: var(--containermargin);
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: var(--corners);
+}
+
+img{
+    width: 64px;
+    height: 40px;
+}
+h1{
+font-family: var(--largefont);
+padding-top: var(--copypadding);
+padding-bottom: var(--copypadding);
+color: var(--lgreycolor);
+}
+
+p{
+    font-family: var(--smallfont);
+    color: var(--twhitecolor);
+    padding-bottom: var(--copypadding);
+}
+
+.sedans{
+        padding: var(--cardpadding);
+        background-color: var(--borangecolor);
+
+        border-top-left-radius: var(--corners);
+}
+
+.sedans > button{
+    color:var(--borangecolor);
+}
+
+.suvs > button{
+    color:var(--vdcyancolor);
+}
+
+.luxury> button{
+    color:var(--dcyancolor);
+}
+
+.suvs{
+        padding: var(--cardpadding);
+        background-color: var(--vdcyancolor);
+
+}
+.luxury{
+        padding: var(--cardpadding);
+        background-color: var(--dcyancolor);
+
+        border-bottom-right-radius: var(--corners);
+}
+
+button{
+    margin-top: var(--buttonmargin);
+    background-color: var(--lgreycolor);
+    border-radius: 50px;
+    padding: var(--buttonpadding);
+    width: var(--buttonwidth);
+    border: none;
+    font-family: var(--smallfont);
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+.container{
+
+    display: block;
+
+    width: var(--containerwidth);
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas: "a b c";
+
+}
+
+    .sedans{
+        grid-area: a;
+        min-width: var(--cardwidth);
+        height: var(--cardheight);
+         border-bottom-left-radius: var(--corners);
+  
+    }
+
+    .suvs{
+        grid-area: b;
+        min-width: var(--cardwidth);
+        height: var(--cardheight);
+    }
+
+    .luxury{
+
+        grid-area: c;
+        min-width: var(--cardwidth);
+        height: var(--cardheight);
+        border-top-right-radius: var(--corners);
+
+    }
+
+
+
+
+}
