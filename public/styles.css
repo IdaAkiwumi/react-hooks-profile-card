@@ -69,25 +69,7 @@ p{
     color:var(--borangecolor);
 }
 
-.suvs > button{
-    color:var(--vdcyancolor);
-}
 
-.luxury> button{
-    color:var(--dcyancolor);
-}
-
-.suvs{
-        padding: var(--cardpadding);
-        background-color: var(--vdcyancolor);
-
-}
-.luxury{
-        padding: var(--cardpadding);
-        background-color: var(--dcyancolor);
-
-        border-bottom-right-radius: var(--corners);
-}
 
 button{
     margin-top: var(--buttonmargin);

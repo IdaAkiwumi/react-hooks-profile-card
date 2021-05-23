@@ -26,23 +26,6 @@
         border-top-right-radius: var(--corners);
     }
 
-    
-
-    .suvs{
-
-       grid-area: b;
-
-  
-    }
-
-    .luxury{
-
-        grid-area: c;
-        border-top-right-radius:unset;
-        border-bottom-left-radius: var(--corners);
-        width: var(--cardwidth);
-  
-    }
 
     button{
         --buttonmargin:2px;
