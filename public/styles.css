@@ -9,6 +9,7 @@
 --bgredcolor: rgb(207, 66, 66);
 --textcolor: #333;
 --lightcolor: #fff;
+--greycolor: rgb(202, 202, 202);
 --redcolor:hsl(0, 100%, 50%);
 --bodycopy: 15px;
 --mainfont: "Lexend Deca", sans-serif;
@@ -20,8 +21,8 @@
 --buttonpadding:20px;
 --containerwidth: 600px;
 --cardwidth: 280px;
---buttonmargin:45px;
---cardheight: 700px;
+--buttonmargin:20px;
+--cardheight: 600px;
 --buttonwidth: 150px;
 --corners: 10px;
 
@@ -76,13 +77,14 @@ p, h2{
 
 
 button{
-    margin-top: var(--buttonmargin);
-    background-color: var(--bgredcolor);
-    border-radius: 50px;
+    margin: var(--buttonmargin);
+    background-color: var(--greycolor);
+    border-radius: 20px;
     padding: var(--buttonpadding);
     width: var(--buttonwidth);
     border: none;
     font-family: var(--mainfont);
+    color: var(--textcolor);
 }
 
 
@@ -94,16 +96,10 @@ button{
 
     width: var(--containerwidth);
 
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    grid-template-areas: "a b c";
 
 }
 
     .profile{
-        grid-area: a;
         min-width: var(--cardwidth);
         height: var(--cardheight);
          border-bottom-left-radius: var(--corners);
