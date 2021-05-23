@@ -38,7 +38,7 @@ body{
     margin-bottom: var(--containermargin);
     margin-left: auto;
     margin-right:auto;
-    border-radius: var(--corners);
+  
     text-align: center;
 }
 
@@ -66,8 +66,7 @@ p, h2{
 .profile{
         padding: var(--cardpadding);
         background-color: var(--lightcolor);
-
-        border-top-left-radius: var(--corners);
+  border-radius: var(--corners);
 }
 
 .profile > button{

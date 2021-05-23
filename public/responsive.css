@@ -6,7 +6,7 @@
     .container{
 
       --cardwidth: 350px;
-      --cardheight: 430px;
+      --cardheight: 630px;
         width: var(--cardwidth);
 
     }
