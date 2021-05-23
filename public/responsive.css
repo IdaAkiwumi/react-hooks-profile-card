@@ -23,4 +23,23 @@
         --buttonmargin:10px;
     }
 
+    
+.like{
+        height: 50px;
+        margin-bottom: var(--copypadding);
+        float:right;
+        margin-right: 90px;
+}
+
+.heart{
+  
+    text-align: center;
+    margin-left: 90px;
+    font-family: var(--mainfont);
+}
+.counternum{
+    display: inline;
+    font-size: 40px;
+}
+
 }
