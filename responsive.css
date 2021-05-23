@@ -1,0 +1,26 @@
+
+
+@media only screen and (max-width: 600px) {
+
+   
+    .container{
+
+      --cardwidth: 350px;
+      --cardheight: 630px;
+        width: var(--cardwidth);
+
+    }
+
+    .profile{
+  
+        width: var(--cardwidth);
+        border-radius:var(--corners);
+
+    }
+
+
+    button{
+        --buttonmargin:10px;
+    }
+
+}

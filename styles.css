@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+    
+}
+
+:root{
+--bgredcolor: rgb(207, 66, 66);
+--textcolor: #333;
+--lightcolor: #fff;
+--greycolor: rgb(202, 202, 202);
+--redcolor:hsl(0, 100%, 50%);
+--bodycopy: 15px;
+--mainfont: "Lexend Deca", sans-serif;
+--minimalistfont: "Big Shoulders Display", sans-serif;
+--containermargin: 2rem;
+--cardpadding: 30px;
+--copypadding:5px;
+--imagepadding:40px;
+--buttonpadding:20px;
+--containerwidth: 600px;
+--cardwidth: 280px;
+--buttonmargin:20px;
+--cardheight: 580px;
+--buttonwidth: 150px;
+--corners: 10px;
+
+}
+
+body{
+
+        background-color: var(--bgredcolor);
+
+    }
+
+.container{
+    margin-top: var(--containermargin);
+    margin-bottom: var(--containermargin);
+    margin-left: auto;
+    margin-right:auto;
+  
+    text-align: center;
+}
+
+img{
+       display: block;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+.image{
+    width: 200px;
+   border-radius: 100%;
+ margin-bottom: var(--imagepadding);
+}
+h1{
+font-family: var(--mainfont);
+padding-top: var(--copypadding);
+padding-bottom: var(--copypadding);
+color: var(--textcolor);
+}
+
+p, h2{
+    font-family: var(--mainfont);
+    color: var(--textcolor);
+    padding-bottom: var(--copypadding);
+}
+
+.profile{
+        padding: var(--cardpadding);
+        background-color: var(--lightcolor);
+  border-radius: var(--corners);
+  
+}
+
+.profile > button{
+    color: var(--textcolor);
+}
+
+
+
+button{
+    margin: var(--buttonmargin);
+    
+    background-color: var(--greycolor);
+    border-radius: 20px;
+    padding: var(--buttonpadding);
+    width: var(--buttonwidth);
+    border: none;
+    font-family: var(--mainfont);
+
+}
+button:hover{
+      background-color: var(--bgredcolor);
+      color: var(--lightcolor);
+}
+
+.like{
+        width: 50px;
+        margin-bottom: var(--copypadding);
+}
+
+.linkedin{
+        width: 50px;
+        margin-bottom: var(--copypadding);
+}
+
+@media only screen and (max-width: 1440px) {
+.container{
+
+    display: block;
+
+    width: var(--containerwidth);
+
+
+}
+
+    .profile{
+        min-width: var(--cardwidth);
+        height: var(--cardheight);
+         border-bottom-left-radius: var(--corners);
+  
+    }
+
+
+}
