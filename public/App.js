@@ -27,5 +27,3 @@ skillButton.addEventListener("click", clickedSkills);
 
 }
 
-
-export default App;
