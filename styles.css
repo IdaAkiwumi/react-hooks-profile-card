@@ -82,6 +82,7 @@ h2{
 text-align: center;
    margin-left: auto;
     margin-right: auto;
+    
 }
 
 button{
@@ -133,6 +134,7 @@ button:hover{
         margin-bottom: var(--copypadding);
         float:right;
         margin-right: 220px;
+        cursor: pointer;
 }
 
 .heart{
@@ -146,4 +148,11 @@ button:hover{
     font-size: 40px;
 }
 
+.name{
+    cursor: pointer;
+}
+
+.skills{
+    cursor: pointer;
+}
 }
