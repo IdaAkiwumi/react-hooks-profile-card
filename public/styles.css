@@ -6,22 +6,22 @@
 }
 
 :root{
---lgreycolor: hsl(0, 0%, 95%);
---twhitecolor: hsla(0, 0%, 100%, 0.75);
---borangecolor: hsl(31, 77%, 52%);
---dcyancolor:hsl(184, 100%, 22%);
---vdcyancolor:hsl(179, 100%, 13%);
+--bgredcolor: rgb(207, 66, 66);
+--textcolor: #333;
+--lightcolor: #fff;
+--redcolor:hsl(0, 100%, 50%);
 --bodycopy: 15px;
---smallfont: "Lexend Deca", sans-serif;
---largefont: "Big Shoulders Display", sans-serif;
+--mainfont: "Lexend Deca", sans-serif;
+--minimalistfont: "Big Shoulders Display", sans-serif;
 --containermargin: 4rem;
---cardpadding: 50px;
---copypadding:30px;
+--cardpadding: 30px;
+--copypadding:5px;
+--imagepadding:40px;
 --buttonpadding:20px;
---containerwidth: 800px;
+--containerwidth: 600px;
 --cardwidth: 280px;
 --buttonmargin:45px;
---cardheight: 500px;
+--cardheight: 700px;
 --buttonwidth: 150px;
 --corners: 10px;
 
@@ -29,56 +29,61 @@
 
 body{
 
-        background-color: var(--lgreycolor);
- 
+        background-color: var(--bgredcolor);
 
     }
 
 .container{
     margin-top: var(--containermargin);
+    margin-bottom: var(--containermargin);
     margin-left: auto;
     margin-right:auto;
     border-radius: var(--corners);
+    text-align: center;
 }
 
 img{
-    width: 64px;
-    height: 40px;
+    width: 200px;
+   border-radius: 100%;
+   display: block;
+   margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--imagepadding);
 }
 h1{
-font-family: var(--largefont);
+font-family: var(--mainfont);
 padding-top: var(--copypadding);
 padding-bottom: var(--copypadding);
-color: var(--lgreycolor);
+color: var(--textcolor);
 }
 
-p{
-    font-family: var(--smallfont);
-    color: var(--twhitecolor);
+p, h2{
+    font-family: var(--mainfont);
+    color: var(--textcolor);
     padding-bottom: var(--copypadding);
 }
 
-.sedans{
+.profile{
         padding: var(--cardpadding);
-        background-color: var(--borangecolor);
+        background-color: var(--lightcolor);
 
         border-top-left-radius: var(--corners);
 }
 
-.sedans > button{
-    color:var(--borangecolor);
+.profile > button{
+    color:var(--lightcolor);
 }
 
 
 
 button{
     margin-top: var(--buttonmargin);
-    background-color: var(--lgreycolor);
+    background-color: var(--bgredcolor);
     border-radius: 50px;
     padding: var(--buttonpadding);
     width: var(--buttonwidth);
     border: none;
-    font-family: var(--smallfont);
+    font-family: var(--mainfont);
 }
 
 
@@ -98,30 +103,13 @@ button{
 
 }
 
-    .sedans{
+    .profile{
         grid-area: a;
         min-width: var(--cardwidth);
         height: var(--cardheight);
          border-bottom-left-radius: var(--corners);
   
     }
-
-    .suvs{
-        grid-area: b;
-        min-width: var(--cardwidth);
-        height: var(--cardheight);
-    }
-
-    .luxury{
-
-        grid-area: c;
-        min-width: var(--cardwidth);
-        height: var(--cardheight);
-        border-top-right-radius: var(--corners);
-
-    }
-
-
 
 
 }
