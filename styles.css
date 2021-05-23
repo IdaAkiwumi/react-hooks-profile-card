@@ -39,8 +39,6 @@ body{
     margin-bottom: var(--containermargin);
     margin-left: auto;
     margin-right:auto;
-  
-    text-align: center;
 }
 
 img{
@@ -55,13 +53,15 @@ img{
  margin-bottom: var(--imagepadding);
 }
 h1{
+ text-align: center;
 font-family: var(--mainfont);
 padding-top: var(--copypadding);
 padding-bottom: var(--copypadding);
 color: var(--textcolor);
 }
 
-p, h2{
+h2{
+    text-align: center;
     font-family: var(--mainfont);
     color: var(--textcolor);
     padding-bottom: var(--copypadding);
@@ -78,9 +78,14 @@ p, h2{
     color: var(--textcolor);
 }
 
-
+.buttons{
+text-align: center;
+   margin-left: auto;
+    margin-right: auto;
+}
 
 button{
+ 
     margin: var(--buttonmargin);
     
     background-color: var(--greycolor);
@@ -96,12 +101,11 @@ button:hover{
       color: var(--lightcolor);
 }
 
-.like{
-        width: 50px;
-        margin-bottom: var(--copypadding);
-}
+
+
 
 .linkedin{
+     clear: both;
         width: 50px;
         margin-bottom: var(--copypadding);
 }
@@ -123,5 +127,23 @@ button:hover{
   
     }
 
+    
+.like{
+        height: 50px;
+        margin-bottom: var(--copypadding);
+        float:right;
+        margin-right: 220px;
+}
+
+.heart{
+  
+    text-align: center;
+    margin-left: 220px;
+    font-family: var(--mainfont);
+}
+.counternum{
+    display: inline;
+    font-size: 40px;
+}
 
 }
