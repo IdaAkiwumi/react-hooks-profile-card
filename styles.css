@@ -134,13 +134,13 @@ button:hover{
         height: 50px;
         margin-bottom: var(--copypadding);
         float:right;
-        margin-right: 220px;
+        margin-right: 210px;
         cursor: pointer;
 }
 
 
 .counternum{
-      text-align: center;
+    text-align: center;
     margin-left: 220px;
     font-family: var(--mainfont);
     display: inline;

@@ -30,15 +30,16 @@ skillButton.addEventListener("click", clickedSkills);
 
 
 
+var numVal = counternum.nodeValue= 0;
 
-var numVal = counternum.nodeValue = 0;
 counternum.textContent = numVal;
-  var number=1;
+
+var number=1;
 
 function heartClick(){
 
-  var i = counternum.nodeValue + number;
-    i++;
+  var i = numVal + number;
+    number++;
   counternum.textContent=i;
 
 }
