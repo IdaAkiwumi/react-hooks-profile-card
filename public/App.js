@@ -1,5 +1,5 @@
-import 'responsive.css';
-import './styles.css';
+import 'public\responsive.css';
+import 'public\styles.css';
 
 var display2 = document.querySelector('#displayt');
 var nameButton = document.querySelector('.name');
