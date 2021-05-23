@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import './responsive.css';
+import './styles.css';
 
+var display2 = document.querySelector('#skill');
 
 function App() {
   return (
@@ -21,8 +24,15 @@ function App() {
       </header>
     </div>
 
+function clickedButton(){
 
-  );
+display2.textContent ='I am a Front-End Developer';
+}
+
+mainButton.addEventListener("click", clickedButton);
+
+
+
 
 }
 
