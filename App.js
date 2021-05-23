@@ -1,5 +1,5 @@
 
-
+var allElements= document.querySelector('.container');
 var display2 = document.querySelector('#displayt');
 var nameButton = document.querySelector('.name');
 var skillButton = document.querySelector('.skills');
