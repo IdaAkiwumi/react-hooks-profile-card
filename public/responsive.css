@@ -31,13 +31,12 @@
         margin-right: 90px;
 }
 
-.heart{
-  
-    text-align: center;
-    margin-left: 90px;
-    font-family: var(--mainfont);
-}
+
 .counternum{
+    
+    text-align: center;
+    margin-left: 85px;
+    font-family: var(--mainfont);
     display: inline;
     font-size: 40px;
 }
