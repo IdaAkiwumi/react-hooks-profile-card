@@ -25,17 +25,18 @@
 
     
 .like{
-        height: 40px;
-        margin-bottom: var(--copypadding);
-        float:right;
-        margin-right: 90px;
+        height: 30px;
+       margin-bottom: var(--copypadding);
+        margin-top: 10px;
+        position:absolute;
+        cursor: pointer;
 }
 
 
 .counternum{
     
     text-align: center;
-    margin-left: 80px;
+ padding-left: 120px;
     font-family: var(--mainfont);
     display: inline;
     font-size: 40px;
