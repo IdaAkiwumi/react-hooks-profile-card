@@ -1,15 +1,15 @@
 
 var allElements= document.querySelector('.container');
 var display2 = document.querySelector('#displayt');
-var nameButton = document.querySelector('.name');
-var skillButton = document.querySelector('.skills');
+var nameButton = document.querySelector('#nameid');
+var skillButton = document.querySelector('#skillid');
 
 function App() {
 
 
 function clickedName(){
 
-display2.innerHTML ='I am a Front-End Developer';
+display2.textContent ='I am a Front-End Developer';
 }
 
 nameButton.addEventListener("click", clickedName);
