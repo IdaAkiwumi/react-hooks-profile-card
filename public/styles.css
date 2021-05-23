@@ -104,12 +104,15 @@ button:hover{
 
 
 .linkedin{
-    clear: both;
-    width: 50px;
-    margin-bottom: var(--copypadding);
     display:block;
     margin-left: auto;
     margin-right: auto;
+    width: 50px;
+    clear: both;
+
+    margin-bottom: var(--copypadding);
+    margin-top:10px;
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -131,17 +134,17 @@ button:hover{
 
     
 .like{
-        height: 50px;
+        height:30px;
         margin-bottom: var(--copypadding);
-        float:right;
-        margin-right: 210px;
+        margin-top: 10px;
+        position:absolute;
         cursor: pointer;
 }
 
 
 .counternum{
     text-align: center;
-    margin-left: 220px;
+    padding-left: 240px;
     font-family: var(--mainfont);
     display: inline;
     font-size: 40px;
