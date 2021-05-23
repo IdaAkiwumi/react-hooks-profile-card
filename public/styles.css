@@ -41,13 +41,11 @@ body{
     margin-right:auto;
 }
 
-img{
-       display: block;
-   margin-left: auto;
-    margin-right: auto;
-}
 
 .image{
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
     width: 200px;
    border-radius: 100%;
  margin-bottom: var(--imagepadding);
@@ -106,9 +104,12 @@ button:hover{
 
 
 .linkedin{
-     clear: both;
-        width: 50px;
-        margin-bottom: var(--copypadding);
+    clear: both;
+    width: 50px;
+    margin-bottom: var(--copypadding);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -137,13 +138,11 @@ button:hover{
         cursor: pointer;
 }
 
-.heart{
-  
-    text-align: center;
+
+.counternum{
+      text-align: center;
     margin-left: 220px;
     font-family: var(--mainfont);
-}
-.counternum{
     display: inline;
     font-size: 40px;
 }
