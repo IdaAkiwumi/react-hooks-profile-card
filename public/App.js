@@ -9,7 +9,7 @@ function App() {
 
 function clickedName(){
 
-display2.textContent ='I am a Front-End Developer';
+display2.innerHTML ='I am a Front-End Developer';
 }
 
 nameButton.addEventListener("click", clickedName);
