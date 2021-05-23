@@ -14,7 +14,7 @@
 --bodycopy: 15px;
 --mainfont: "Lexend Deca", sans-serif;
 --minimalistfont: "Big Shoulders Display", sans-serif;
---containermargin: 4rem;
+--containermargin: 2rem;
 --cardpadding: 30px;
 --copypadding:5px;
 --imagepadding:40px;
@@ -22,7 +22,7 @@
 --containerwidth: 600px;
 --cardwidth: 280px;
 --buttonmargin:20px;
---cardheight: 600px;
+--cardheight: 580px;
 --buttonwidth: 150px;
 --corners: 10px;
 
@@ -90,6 +90,10 @@ button{
     border: none;
     font-family: var(--mainfont);
 
+}
+button:hover{
+      background-color: var(--bgredcolor);
+      color: var(--lightcolor);
 }
 
 .like{
