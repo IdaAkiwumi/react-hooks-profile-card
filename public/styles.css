@@ -44,12 +44,15 @@ body{
 }
 
 img{
-    width: 200px;
-   border-radius: 100%;
-   display: block;
+       display: block;
    margin-left: auto;
     margin-right: auto;
-    margin-bottom: var(--imagepadding);
+}
+
+.image{
+    width: 200px;
+   border-radius: 100%;
+ margin-bottom: var(--imagepadding);
 }
 h1{
 font-family: var(--mainfont);
@@ -68,26 +71,36 @@ p, h2{
         padding: var(--cardpadding);
         background-color: var(--lightcolor);
   border-radius: var(--corners);
+  
 }
 
 .profile > button{
-    color:var(--lightcolor);
+    color: var(--textcolor);
 }
 
 
 
 button{
     margin: var(--buttonmargin);
+    
     background-color: var(--greycolor);
     border-radius: 20px;
     padding: var(--buttonpadding);
     width: var(--buttonwidth);
     border: none;
     font-family: var(--mainfont);
-    color: var(--textcolor);
+
 }
 
+.like{
+        width: 50px;
+        margin-bottom: var(--copypadding);
+}
 
+.linkedin{
+        width: 50px;
+        margin-bottom: var(--copypadding);
+}
 
 @media only screen and (max-width: 1440px) {
 .container{
