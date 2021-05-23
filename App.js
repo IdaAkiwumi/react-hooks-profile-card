@@ -6,14 +6,14 @@ var nameButton = document.querySelector('.name');
 var skillButton = document.querySelector('.skills');
 
 function App() {
-<>
+
 
 function clickedName(){
 
 display2.textContent ='I am a Front-End Developer';
 }
 
-skillButton.addEventListener("click", clickedName);
+nameButton.addEventListener("click", clickedName);
 
 
 
@@ -25,7 +25,7 @@ display2.textContent ='I am a Front-End Developer';
 
 skillButton.addEventListener("click", clickedSkills);
 
-</>
+
 }
 
 
