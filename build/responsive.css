@@ -1,0 +1,45 @@
+
+
+@media only screen and (max-width: 600px) {
+
+   
+    .container{
+
+      --cardwidth: 350px;
+      --cardheight: 660px;
+        width: var(--cardwidth);
+
+    }
+
+    .profile{
+  
+        width: var(--cardwidth);
+        border-radius:var(--corners);
+
+    }
+
+
+    button{
+        --buttonmargin:10px;
+    }
+
+    
+.like{
+        height: 30px;
+       margin-bottom: var(--copypadding);
+        margin-top: 10px;
+        position:absolute;
+        cursor: pointer;
+}
+
+
+.counternum{
+    
+    text-align: center;
+ padding-left: 120px;
+    font-family: var(--mainfont);
+    display: inline;
+    font-size: 40px;
+}
+
+}
