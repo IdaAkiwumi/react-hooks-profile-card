@@ -1,48 +1,38 @@
+// Updated UI interaction logic and state handling
+// Refined for cleaner state management and improved UX behavior
 
-var allElements= document.querySelector('.container');
-var display2 = document.querySelector('#displayt');
-var nameButton = document.querySelector('#nameid');
-var skillButton = document.querySelector('#skillid');
-var counternum = document.querySelector('.counternum');
-var like = document.querySelector('#likeid');
+const container = document.querySelector('.container');
+const displayText = document.querySelector('#displayt');
+const nameButton = document.querySelector('#nameid');
+const skillButton = document.querySelector('#skillid');
+const counterDisplay = document.querySelector('.counternum');
+const likeButton = document.querySelector('#likeid');
 
-display2.textContent ='My name is Ida';
+// Initial state
+let likeCount = 0;
+displayText.textContent = 'My name is Ida';
+counterDisplay.textContent = likeCount;
 
+// Event handlers
+const showName = () => {
+  displayText.textContent = 'My name is Ida';
+};
 
+const showSkills = () => {
+  displayText.textContent = 'I am a Front End Developer with a focus on UI and interaction';
+};
 
+const handleLike = () => {
+  likeCount += 1;
+  counterDisplay.textContent = likeCount;
+  
+  likeButton.style.transform = 'scale(1.1)';
+setTimeout(() => {
+  likeButton.style.transform = 'scale(1)';
+}, 100);
+};
 
-function clickedName(){
-
-display2.textContent ='My name is Ida';
-}
-
-nameButton.addEventListener("click", clickedName);
-
-
-
-
-function clickedSkills(){
-
-display2.textContent='I am a Front-End Developer';
-}
-
-skillButton.addEventListener("click", clickedSkills);
-
-
-
-var numVal = counternum.nodeValue= 0;
-
-counternum.textContent = numVal;
-
-var number=1;
-
-function heartClick(){
-
-  var i = numVal + number;
-    number++;
-  counternum.textContent=i;
-
-}
-
-like.addEventListener("click", heartClick);
-
+// Event listeners
+nameButton.addEventListener('click', showName);
+skillButton.addEventListener('click', showSkills);
+likeButton.addEventListener('click', handleLike);
