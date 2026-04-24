@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment Notes
+- **Homepage Setting**: Keep `"homepage": "."` in `package.json` to ensure images and styles load correctly on both Localhost and GitHub Pages.
+
 ## Available Scripts
 
 In the project directory, you can run:

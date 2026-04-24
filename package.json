@@ -1,6 +1,7 @@
 {
   "name": "react-hooks-profile-card",
-  "homepage": "https://idaakiwumi.github.io/react-hooks-profile-card/",
+  "homepage": ".", 
+  "_note": "The homepage dot is needed for gh-pages and local viewing to work properly",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

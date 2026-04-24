@@ -43,3 +43,7 @@
 }
 
 }
+.profile {
+  justify-content: space-between;
+  height: 600px; /* adjust as needed */
+}

@@ -129,6 +129,7 @@ button:hover{
         min-width: var(--cardwidth);
         height: var(--cardheight);
          border-bottom-left-radius: var(--corners);
+         position: relative;
   
     }
 
